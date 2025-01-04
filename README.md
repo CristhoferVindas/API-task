@@ -39,7 +39,7 @@ Create a `.env` file in the root directory and add the following:
 
 ```env
 DB_HOST=localhost
-DB_USER=root
+DB_USER=yourusername
 DB_PASSWORD=yourpassword
 DB_NAME=TaskManager
 ```
