@@ -10,6 +10,7 @@ var projectsRouter = require('./routes/projects');
 var tasksRouter = require('./routes/tasks');
 var labelsRouter = require('./routes/labels');
 var tasksLabelsRouter = require('./routes/tasksLabels');
+var activityLogRouter = require('./routes/activityLog');
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use('/projects', projectsRouter);
 app.use('/tasks', tasksRouter);
 app.use('/labels', labelsRouter);
 app.use('/tasksLabels', tasksLabelsRouter);
+app.use('/activityLog', activityLogRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
