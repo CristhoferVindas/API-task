@@ -1,7 +1,5 @@
 # API-task
 
-# API-task
-
 # Task Manager API
 
 The **Task Manager API** is a robust RESTful API that allows users to manage their tasks, projects, labels, and activity logs efficiently. This API is designed to handle common task management operations with secure user authentication and role-based access control. Below is a detailed guide to setting up, using, and understanding the API.
