@@ -1,5 +1,45 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div(style="max-width: 800px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);")
+    h1(style="text-align: center; color: #2c3e50; font-size: 36px; margin-bottom: 10px;")= title
+    p(style="text-align: center; font-size: 18px; color: #666; margin-bottom: 20px;") Welcome to #{title}
+
+    h2(style="color: #34495e; margin-top: 20px; font-size: 28px; border-bottom: 2px solid #ddd; padding-bottom: 5px;") API Overview
+    p(style="font-size: 16px; color: #555; line-height: 1.6; margin-bottom: 20px;") The Task Manager API allows you to manage users, projects, tasks, and labels efficiently. Below is a quick overview of the available resources and endpoints:
+
+    h3(style="color: #34495e; margin-top: 20px; font-size: 24px;") Users
+    ul(style="list-style-type: disc; padding-left: 20px; margin-bottom: 20px;")
+      li POST /users - Create a new user
+      li GET /users - Get a list of all users
+      li GET /users/:id - Get details of a specific user
+      li PUT /users/:id - Update a user's details
+      li DELETE /users/:id - Delete a user
+
+    h3(style="color: #34495e; margin-top: 20px; font-size: 24px;") Projects
+    ul(style="list-style-type: disc; padding-left: 20px; margin-bottom: 20px;")
+      li POST /projects - Create a new project
+      li GET /projects - Get a list of all projects
+      li GET /projects/:id - Get details of a specific project
+      li PUT /projects/:id - Update a project
+      li DELETE /projects/:id - Delete a project
+
+    h3(style="color: #34495e; margin-top: 20px; font-size: 24px;") Tasks
+    ul(style="list-style-type: disc; padding-left: 20px; margin-bottom: 20px;")
+      li POST /tasks - Create a new task
+      li GET /tasks - Get a list of all tasks
+      li GET /tasks/:id - Get details of a specific task
+      li PUT /tasks/:id - Update a task
+      li DELETE /tasks/:id - Delete a task
+
+    h3(style="color: #34495e; margin-top: 20px; font-size: 24px;") Labels
+    ul(style="list-style-type: disc; padding-left: 20px; margin-bottom: 20px;")
+      li POST /labels - Create a new label
+      li GET /labels - Get a list of all labels
+      li GET /labels/:id - Get details of a specific label
+      li PUT /labels/:id - Update a label
+      li DELETE /labels/:id - Delete a label
+
+    h3(style="color: #34495e; margin-top: 20px; font-size: 24px;") Activity Log
+    ul(style="list-style-type: disc; padding-left: 20px; margin-bottom: 20px;")
+      li GET /activity_log - Get the activity log to see recent actions
