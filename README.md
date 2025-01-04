@@ -183,17 +183,10 @@ The server will run on `http://localhost:3000`.
 | ------ | --------------- | ------------------------- |
 | GET    | `/activity_log` | Get recent system actions |
 
-## 🔐 Security
-
-This API uses **JWT (JSON Web Token)** for authentication and authorization. Each request to a protected route must include a valid JWT token in the `Authorization` header:
-
-```
-Authorization: Bearer <token>
-```
 
 ## 🧪 Testing the API
 
-You can test the API using tools like **Postman** or **curl**. Below is a sample request to create a new user:
+You can test the API using tools like **Postman**. Below is a sample request to create a new user:
 
 ```bash
 POST /users
